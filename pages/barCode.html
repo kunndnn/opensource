@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generate Barcode</title>
+        <script src="../js/CDNs/barCode.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Input field for user input -->
+        <label for="barcodeInput">Enter value for Barcode:</label>
+        <input type="text" id="barcodeInput" placeholder="Enter value" />
+
+        <!-- Button to generate barcode -->
+        <button onclick="generateBarcode()">Generate Barcode</button>
+
+        <!-- Canvas element where the barcode will be displayed -->
+        <canvas id="barcode"></canvas>
+
+        <script src="../js/barCode.js"></script>
+
+    </body>
+
+</html>
