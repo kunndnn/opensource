@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CamanJS Image Manipulation and Download</title>
+        <!-- Include CamanJS Library -->
+        <script src="../js/CDNs/caman.js"></script>
+        <style>
+            #canvasContainer {
+                margin-top: 20px;
+            }
+
+            #downloadBtn {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>CamanJS Image Manipulation and Download</h2>
+
+        <!-- Image upload input -->
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <!-- Canvas for image manipulation -->
+        <div id="canvasContainer">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <!-- Buttons to apply effects and download image -->
+        <div>
+            <button onclick="applyFilter('brightness', 10)">Increase Brightness</button>
+            <button onclick="applyFilter('contrast', 10)">Increase Contrast</button>
+            <button onclick="applyFilter('vintage')">Vintage Filter</button>
+            <button onclick="resetImage()">Reset Image</button>
+            <button id="downloadBtn" onclick="downloadImage()">Download Image</button>
+        </div>
+
+        <script src="../js/imageEditor.js"></script>
+    </body>
+
+</html>
